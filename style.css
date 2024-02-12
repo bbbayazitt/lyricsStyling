@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@keyframes colorChange {
+    0% {color: red;}
+    50% {color: blue;}
+    100% {color: red;}
+}
+
+@keyframes colorChange2 {
+    0% {color: darkred;}
+    50% {color: black;}
+    100% {color: darkred;}
+}
+
+@keyframes colorChange3 {
+    0% {color: green;}
+    33% {color: orange;}
+    66% {color: yellow;}
+    100% {color: purple;}
+}
+
+@keyframes pulse {
+    0% {font-size: 20px;}
+    50% {font-size: 22px;}
+    100% {font-size: 20px;}
+}
+
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+    background-color: lightgray;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+
+p {
+    text-align: justify;
+}
+
+#intro {
+    animation: colorChange 3s infinite;
+}
+
+#chorus p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    animation: pulse 1s infinite;
+}
+
+#chorus2 p, #intro {
+    font-family: Arial, sans-serif;
+    color: red;
+    font-size: 20px;
+    animation: colorChange 3s infinite;
+}
+
+
+#verse1 p, #pre-chorus p {
+    font-family: Arial, sans-serif;
+    color: darkred;
+    font-size: 20px;
+    animation: colorChange2 3s infinite;
+}
+
+#verse2 p {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    animation: colorChange3 3s infinite;
+}
+
+
+
+
+
+
